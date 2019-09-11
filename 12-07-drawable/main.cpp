@@ -54,7 +54,7 @@ public:
 };
 
 int main(int argc, char **argv){
-   hwlib::target::window w( 128, 64, 2 );
+   hwlib::target::window w( hwlib::xy( 128, 64 ), hwlib::white, hwlib::black, 2 );
    ball b( w, hwlib::xy( 10, 10 ), 8, hwlib::xy( 2, 2 ));   
    for(;;){
       w.clear();

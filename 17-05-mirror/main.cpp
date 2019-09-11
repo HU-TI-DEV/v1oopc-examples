@@ -162,7 +162,7 @@ public:
 // ===========================================================================
 
 int main(){
-   hwlib::target::window big( hwlib::xy( 128, 64 ), 2 );    
+   hwlib::target::window big( hwlib::xy( 128, 64 ), hwlib::white, hwlib::black, 2 );   
    auto w = window_mirror( big );
   
    line top( w, hwlib::xy(   0,  0 ), hwlib::xy( 63,  0 ) );

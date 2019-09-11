@@ -13,8 +13,8 @@ void window_mirror::write_implementation(
    w.write( hwlib::xy( ( w.size.x - 1 ) - pos.x, pos.y ), col );
 }
 
-void window_mirror::clear(){ 
-   w.clear(); 
+void window_mirror::clear_implementation( hwlib::color col ){
+   w.clear( col ); 
 }
 
 void window_mirror::flush(){

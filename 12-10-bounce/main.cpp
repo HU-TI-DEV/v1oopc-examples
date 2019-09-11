@@ -139,7 +139,7 @@ public:
 // ===========================================================================
 
 int main(){
-   hwlib::target::window w( hwlib::xy( 128, 64 ), 2 );
+   hwlib::target::window w( hwlib::xy( 128, 64 ), hwlib::white, hwlib::black, 2 );
    line top( w, hwlib::xy(   0,  0 ), hwlib::xy( 127,  0 ) );
    line right( w, hwlib::xy( 127,  0 ), hwlib::xy( 127, 63 ) );
    line bottom( w, hwlib::xy(   0, 63 ), hwlib::xy( 127, 63 ) );

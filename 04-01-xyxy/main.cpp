@@ -3,7 +3,7 @@
 
 int main(){
    // the window in which we want to print the line
-   hwlib::target::window w( 128, 64 );	
+   hwlib::target::window w( hwlib::xy( 128, 64 ), hwlib::white, hwlib::black, 2 );
    
    // print a line by specifying the start x,y and the end x,y
    line_print( w, 10, 10, 20, 20 );

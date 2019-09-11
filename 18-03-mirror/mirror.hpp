@@ -16,7 +16,7 @@ private:
 public:
 
    window_mirror( hwlib::window & w ); 
-   void clear() override;
+   void clear_implementation( hwlib::color col ) override;
    void flush() override;
    
 };

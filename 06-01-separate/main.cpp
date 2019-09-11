@@ -45,7 +45,7 @@ void line::print(){
 }
 
 int main(int argc, char **argv){
-   hwlib::target::window w( 128, 64 );	    
+   hwlib::target::window w( hwlib::xy( 128, 64 ), hwlib::white, hwlib::black, 2 );    
     
    line diagonal_line( w, 10, 10, 40, 20 );
    diagonal_line.print();

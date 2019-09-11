@@ -7,7 +7,7 @@
 int main(int argc, char **argv){
     
    // the window in which we want to print the line
-   hwlib::target::window w( 128, 64 );    
+   hwlib::target::window w( hwlib::xy( 128, 64 ));    
     
    rectangle square( w, 20, 20, 40, 40 );
    square.print();

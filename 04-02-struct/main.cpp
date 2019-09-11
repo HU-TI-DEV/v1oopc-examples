@@ -8,7 +8,7 @@
 int main(int argc, char **argv){
     
    // the window in which we want to print the line
-   hwlib::target::window w( 128, 64 );	
+   hwlib::target::window w( hwlib::xy( 128, 64 ), hwlib::white, hwlib::black, 2 );
    
    // print a line by specifying the coordinates in a struct
    line diagonal_line = { 10, 10, 40, 20 };

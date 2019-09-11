@@ -12,11 +12,11 @@ int main( void ){
    auto i2c_bus = hwlib::i2c_bus_bit_banged_scl_sda( scl, sda );
    auto oled    = hwlib::glcd_oled( i2c_bus, 0x3c );  
 
-   auto w1 = hwlib::window_part( 
+   auto w1 = hwlib::part( 
       oled, 
       hwlib::xy( 0, 0 ),
       hwlib::xy( 128, 32));
-   auto w2 = hwlib::window_part( 
+   auto w2 = hwlib::part( 
       oled, 
       hwlib::xy( 0, 32 ),
       hwlib::xy( 128, 32));
