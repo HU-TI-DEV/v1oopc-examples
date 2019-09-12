@@ -17,9 +17,6 @@ void f( const hwlib::string<0> & s ){
 }
 
 int main( void ){	
-    
-   // kill the watchdog
-   WDT->WDT_MR = WDT_MR_WDDIS;
    
    // wait for the PC to start the console
    hwlib::wait_ms( 1000 );

@@ -12,8 +12,6 @@
 #undef register
 
 int main( void ){	
-   // kill the watchdog
-   WDT->WDT_MR = WDT_MR_WDDIS;
    
    // make the GPIO pin an output
    PIOB->PIO_OER = 0x01 << 27;

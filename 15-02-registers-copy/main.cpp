@@ -11,8 +11,6 @@
 #undef register
 
 int main( void ){	
-   // kill the watchdog
-   WDT->WDT_MR = WDT_MR_WDDIS;
    
    // enable the clock to all GPIO
    PMC->PMC_PCER0 = ( 0x3F << 11 );   

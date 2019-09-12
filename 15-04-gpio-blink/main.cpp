@@ -9,7 +9,6 @@
 #include "hwlib.hpp"
 
 int main( void ){	
-   // hwlib will kill the watchdog
    
    // the on-board LED is connected to port B bit 27   
    auto led = hwlib::target::pin_in_out( 1, 27 );
