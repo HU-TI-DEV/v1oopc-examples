@@ -9,12 +9,9 @@
 #############################################################################
 
 # the location of the ti software directory
-ifeq ($(OS),Windows_NT)
-   TI-SOFTWARE       := C:/ti-software
-else
-   TI-SOFTWARE       := $(HOME)
-endif   
+RELATIVE          ?= .
+TI-SOFTWARE       := $(RELATIVE)/..
 
-# include hwlib
+# add hwlib
 HWLIB             ?= $(TI-SOFTWARE)/hwlib
-include           $(HWLIB)/makefile.inc
+include           $(HWLIB)/Makefile.inc
