@@ -14,4 +14,4 @@ TI-SOFTWARE       := $(RELATIVE)/..
 
 # add hwlib
 HWLIB             ?= $(TI-SOFTWARE)/hwlib
-include           $(HWLIB)/maskefile.inc
+include           $(HWLIB)/makefile.inc
