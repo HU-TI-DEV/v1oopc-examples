@@ -9,13 +9,13 @@
 #############################################################################
 
 # source files in this project (main.cpp is automatically assumed)
-SOURCES := 
+SOURCES := tests.cpp
 
 # header files in this project
 HEADERS := xy.hpp
 
 # other places to look for files for this project
-SEARCH  := 
+SEARCH  :=
 
 # exceptions an RTTI are needed
 CPP_EXCEPTIONS    := 
