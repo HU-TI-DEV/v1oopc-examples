@@ -3,7 +3,7 @@
 int main( void ){	
       
    // wait for the PC to start the console
-   hwlib::wait_ms( 1000 );
+   hwlib::wait_ms( 2000 );
    
    hwlib::cout 
       << "cout demo\n"
