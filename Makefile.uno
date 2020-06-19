@@ -10,7 +10,6 @@
 
 # settings for Arduino Due projects
 TARGET            := arduino_uno
-SERIAL_PORT       ?= COM4
 CONSOLE_BAUDRATE  := 2400
 
 # defer to the Makefile.shared
