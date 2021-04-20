@@ -57,10 +57,11 @@ int main( void ){
    auto led2_pin = target::pin_out( target::pins::d5 );
    auto led3_pin = target::pin_out( target::pins::d4 );
    
-   auto led2     = pin_out_invert( led2_pin );
-   auto led3     = pin_out_invert( led3_pin );
+   auto led_23_pins = pin_out_all( led2_pin, led3_pin );
    
-   auto leds = pin_out_all( led0, led1, led2, led3 );
+   auto led_23     = pin_out_invert( led_23_pins );
+   
+   auto leds = pin_out_all( led0, led1, led_23 );
    
    hwlib::blink( leds, 500 );    
 }

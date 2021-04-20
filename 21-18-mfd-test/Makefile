@@ -17,9 +17,7 @@ HEADERS :=
 # other places to look for files for this project
 SEARCH  := 
 
-SERIAL_PORT_DUE   ?= COM9
-
 # set RELATIVE to the next higher directory 
 # and defer to the appropriate Makefile.* there
 RELATIVE := ..
-include $(RELATIVE)/Makefile.due
+include $(RELATIVE)/Makefile.mfd
